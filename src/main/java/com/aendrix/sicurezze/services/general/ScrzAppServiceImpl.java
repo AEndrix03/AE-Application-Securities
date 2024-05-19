@@ -26,13 +26,8 @@ public class ScrzAppServiceImpl implements ScrzAppService {
     }
 
     @Override
-    public void createApplication() {
-        ApplicationDto applicationDto = ApplicationDto.builder()
-                .id(1)
-                .code("codetest")
-                .name("name")
-                .description("description")
-                .build();
+    public void createApplication(ApplicationDto applicationDto) {
+
         scrzAppRepository.save(applicationDto.toEntity());
     }
 

@@ -22,13 +22,4 @@ public class ScrzType {
     @Column(name = "code")
     private String code;
 
-    @Column(name = "insertdate")
-    private java.sql.Date insertdate;
-
-    @Column(name = "updatedate")
-    private java.sql.Date updatedate;
-
-    @Column(name = "owner")
-    private String owner;
-
 }

@@ -34,10 +34,4 @@ public class ScrzUser {
     @Column(name = "lastlogin")
     private java.sql.Time lastlogin;
 
-    @Column(name = "dateinsert")
-    private java.sql.Date dateinsert;
-
-    @Column(name = "owner")
-    private String owner;
-
 }
