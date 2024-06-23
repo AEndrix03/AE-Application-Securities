@@ -1,4 +1,4 @@
-package com.aendrix.sicurezze.entities;
+package com.aendrix.sicurezze.entity;
 
 import jakarta.persistence.*;
 import lombok.Data;

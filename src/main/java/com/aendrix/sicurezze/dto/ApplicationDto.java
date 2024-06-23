@@ -1,6 +1,6 @@
 package com.aendrix.sicurezze.dto;
 
-import com.aendrix.sicurezze.entities.ScrzApp;
+import com.aendrix.sicurezze.entity.ScrzApp;
 import lombok.Builder;
 import lombok.Data;
 

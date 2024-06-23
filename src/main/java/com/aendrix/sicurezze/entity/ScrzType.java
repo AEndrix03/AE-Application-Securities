@@ -1,19 +1,19 @@
-package com.aendrix.sicurezze.entities;
+package com.aendrix.sicurezze.entity;
 
 import jakarta.persistence.*;
 import lombok.Data;
 
 @Entity
 @Data
-@Table(name = "scrz_app")
-public class ScrzApp {
+@Table(name = "scrz_type")
+public class ScrzType {
 
     @Id
     @GeneratedValue(strategy = GenerationType.IDENTITY)
-    @Column(name = "id")
     private long id;
 
     @Column(name = "name")
+
     private String name;
 
     @Column(name = "description")
@@ -21,6 +21,5 @@ public class ScrzApp {
 
     @Column(name = "code")
     private String code;
-
 
 }
