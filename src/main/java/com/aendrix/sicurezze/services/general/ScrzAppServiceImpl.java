@@ -51,5 +51,14 @@ public class ScrzAppServiceImpl implements ScrzAppService {
         return scrzAppRepository.save(app).toDto();
     }
 
+    @Override
+    public ApplicationDto getApplicationByCode(String code) throws BadRequestException {
+        ScrzApp app = scrzAppRepository.getApplicationByCode(code);
+        if (app == null) {
+            throw new BadRequestException("There is no application with given code.");
+        }
+        return app.toDto();
+    }
+
 
 }

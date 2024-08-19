@@ -12,4 +12,6 @@ public interface ScrzAppService {
     void createApplication(ApplicationDto applicationDto) throws BadRequestException;
 
     ApplicationDto updateApplication(ApplicationDto applicationDto) throws BadRequestException;
+
+    ApplicationDto getApplicationByCode(String code) throws BadRequestException;
 }
